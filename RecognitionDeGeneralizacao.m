@@ -1,11 +1,16 @@
 
+
 %Dados de entrada e o desejado, criando o gr?fico inicial.
 
 %Cria 100 valores de entrada
 
-EntradaTeste = [1 1 2 2 1; 1 2 2 1 1; 1 2 1 1 1; 2 2 2 1 1; 1 1 1 1 1];
+EntradaTeste = [1 1 2 2 1; 
+                1 2 2 1 1; 
+                1 2 1 1 1; 
+                2 2 2 1 1; 
+                1 1 1 1 2];
 
-% Função de Saída
+% Fun??o de Sa?da
 Desejado = [1 2 3 4 5];
 
 disp (EntradaTeste)
@@ -17,16 +22,16 @@ disp (Desejado)
 %Quantidades de neurônios na camada de Entrada In
 In = 1;
 
-%Quantidade de neurônios na camada Escondida H
-H = 18;
+%Quantidade de neur?nios na camada Escondida H
+H = 15;
 
-%Quantidade de neurônios na camada de Saida Out
+%Quantidade de neur?nios na camada de Saida Out
 Out = 1;
 
 %Definindo a taxa de aprendizagem - Valor Eta.
-eta = 0.00022;
+eta = 0.00031;
 
-%Se a fun??o de ativação é linear, ent?o Defini-se o valor da constante k.
+%Se a fun??o de ativa??o ? linear, ent?o Defini-se o valor da constante k.
 k = 1; 
 
 %Algoritmo
