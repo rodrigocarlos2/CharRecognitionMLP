@@ -23,16 +23,16 @@ disp (Desejado)
 In = 5;
 
 %Quantidade de neur?nios na camada Escondida H
-H = 15;
+H = 20;
 
 %Quantidade de neur?nios na camada de Saida Out
 Out = 1;
 
 %Definindo a taxa de aprendizagem - Valor Eta.
-eta = 0.00031;
+eta = 0.00035;
 
 %Quantidade de Épocas
-Epocas = 10200;
+Epocas = 12600;
 
 %Se a fun??o de ativa??o ? linear, ent?o Defini-se o valor da constante k.
 k = 1; 
@@ -109,7 +109,7 @@ ylabel('Erro (EQM)');
 legend('Erro Quadrático Médio');
 
 %Grava os pesos atuais para posteriores opera??es.
-save pesos6 Woh Whi
+save pesos15 Woh Whi
 
 %Grava pesos para serem utilizados no teste de generaliza??o
 save pesoteste Woh Whi
