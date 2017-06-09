@@ -7,32 +7,33 @@ clear; clc;close all;
 %Dados de entrada e o desejado, criando o gráfico inicial.
 
 %Cria 1000 valores de entrada
-Entrada = [1 2 2 2 1;
-           1 2 2 1 1;
-           1 2 1 1 1;
-           2 2 2 1 1;
-           1 1 1 1 1];
+Entrada = [1 2 2 2 1 1;
+           1 2 2 1 1 1;
+           1 2 1 1 1 1;
+           2 2 2 1 1 1;
+           1 1 1 1 1 1;
+           1 1 1 1 1 1]';
 
 % Função de Saída
-Desejado = [1 2 3 4 5];
+Desejado = [1 2 3 4 5 6];
 
 disp (Entrada)
 disp (Desejado)
 
 %Quantidades de neur?nios na camada de Entrada In
-In = 5;
+In = 6;
 
 %Quantidade de neur?nios na camada Escondida H
-H = 20;
+H = 28;
 
 %Quantidade de neur?nios na camada de Saida Out
 Out = 1;
 
 %Definindo a taxa de aprendizagem - Valor Eta.
-eta = 0.00035;
+eta = 0.000387;
 
 %Quantidade de Épocas
-Epocas = 12600;
+Epocas = 18200;
 
 %Se a fun??o de ativa??o ? linear, ent?o Defini-se o valor da constante k.
 k = 1; 
@@ -109,7 +110,7 @@ ylabel('Erro (EQM)');
 legend('Erro Quadrático Médio');
 
 %Grava os pesos atuais para posteriores opera??es.
-save pesos15 Woh Whi
+save pesos29 Woh Whi
 
 %Grava pesos para serem utilizados no teste de generaliza??o
 save pesoteste Woh Whi

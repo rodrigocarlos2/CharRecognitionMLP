@@ -23,13 +23,13 @@ disp (Desejado)
 In = 1;
 
 %Quantidade de neur?nios na camada Escondida H
-H = 20;
+H = 28;
 
 %Quantidade de neur?nios na camada de Saida Out
 Out = 1;
 
 %Definindo a taxa de aprendizagem - Valor Eta.
-eta = 0.00035;
+eta = 0.000387;
 
 %Se a fun??o de ativa??o ? linear, ent?o Defini-se o valor da constante k.
 k = 1; 
